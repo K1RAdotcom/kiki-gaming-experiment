@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiki Gaming</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
+<body>
+
+    <!-- Navigation -->
+
+    <header>
+    <h1>KIKI GAMING</h1>
+    <p>Level Up. Play More. Have Fun.</p>
+</header>
+
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#games">Games</a> |
+        <a href="#about">About</a> |
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" onclick="toggleTheme()"> Light Mode</button>
+    </nav>
+
+    <hr>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to Kiki Gaming</h1>
+        <a href="#games">
+    <button>Explore Games 🎮</button>
+</a>
+        <img src="first image.jfif"w=800" 
+     alt="Gaming setup" 
+     width="500">
+        <p>Your place for awesome games and gaming content!</p>
+    </section>
+
+    <hr>
+
+    
+    <!-- Games Section -->
+<section id="games">
+
+    <div class="search-box">
+        <input type="text" id="gameSearch" placeholder="Search for a game...">
+        <button onclick="searchGames()">Search 🔎</button>
+        <button onclick="clearSearch()">Clear ❌</button>
+    </div>
+
+    <h2>Explore Games</h2>
+
+    <div class="games-container">
+
+        <!-- Mobile Legends -->
+        <div class="game-card">
+
+            <h3>Mobile Legend Bang Bang</h3>
+
+            <img src="mobile legend.jfif"
+                 alt="Mobile Legends" width="300">
+
+            <p>Choose your heroes and defeat your enemies </p>
+
+            <p>⭐ Rating: 5/5</p>
+
+            <button class="favorite-btn"
+                    onclick="toggleFavorite(this, 'Mobile Legends')">
+                🤍 Favorite
+            </button>
+
+            <a href="PASTE_MOBILE_LEGENDS_LINK_HERE"
+               target="_blank">
+                <button>Play Mobile Legends</button>
+            </a>
+
+        </div>
+
+        <!-- Call of Duty -->
+        <div class="game-card">
+
+            <h3>Call of Duty</h3>
+
+            <img src="call of duty.jfif"
+                 alt="Call of Duty">
+
+            <p>An action-packed game with intense battles and missions </p>
+
+            <p>⭐ Rating: 4.5/5</p>
+
+            <button class="favorite-btn"
+                    onclick="toggleFavorite(this, 'Call of Duty')">
+                🤍 Favorite
+            </button>
+
+            <a href="PASTE_CALL_OF_DUTY_LINK_HERE"
+               target="_blank">
+                <button>Play Call of Duty</button>
+            </a>
+
+        </div>
+
+
+        <!-- Need for Speed -->
+        <div class="game-card">
+
+            <h3>Need for Speed</h3>
+
+            <img src="need for speed.jfif"
+                 alt="Need for Speed">
+
+            <p>Race fast cars and become the ultimate street racer </p>
+
+            <p>⭐ Rating: 4/5</p>
+
+            <button class="favorite-btn"
+                    onclick="toggleFavorite(this, 'Need for Speed')">
+                🤍 Favorite
+            </button>
+
+            <a href="PASTE_NEED_FOR_SPEED_LINK_HERE"
+               target="_blank">
+                <button>Play Need for Speed</button>
+            </a>
+
+        </div>
+
+
+        <!-- Minecraft -->
+        <div class="game-card">
+
+            <h3>Minecraft</h3>
+
+            <img src="minecraft.jpg"
+                 alt="Minecraft">
+
+            <p>Build, explore, survive, and create your own world </p>
+
+            <p>⭐ Rating: 5/5</p>
+
+            <button class="favorite-btn"
+                    onclick="toggleFavorite(this, 'Minecraft')">
+                🤍 Favorite
+            </button>
+
+            <a href="PASTE_MINECRAFT_LINK_HERE"
+               target="_blank">
+                <button>Play Minecraft</button>
+            </a>
+
+        </div>
+
+
+        <!-- Fortnite -->
+        <div class="game-card">
+
+            <h3>Fortnite</h3>
+
+            <img src="fortnite.jpg"
+                 alt="Fortnite">
+
+            <p>Build, fight, and survive until you become the last player standing </p>
+
+            <p>⭐ Rating: 4.5/5</p>
+
+            <button class="favorite-btn"
+                    onclick="toggleFavorite(this, 'Fortnite')">
+                🤍 Favorite
+            </button>
+
+            <a href="PASTE_FORTNITE_LINK_HERE"
+               target="_blank">
+                <button>Play Fortnite</button>
+            </a>
+
+        </div>
+
+
+        <!-- Grand Theft Auto V -->
+        <div class="game-card">
+
+            <h3>Grand Theft Auto V</h3>
+
+            <img src="gta 5.jpg"
+                 alt="Grand Theft Auto V">
+
+            <p>Explore a massive city, complete missions, and experience an exciting story </p>
+
+            <p>⭐ Rating: 4.5/5</p>
+
+            <button class="favorite-btn"
+                    onclick="toggleFavorite(this, 'Grand Theft Auto V')">
+                🤍 Favorite
+            </button>
+
+            <a href="PASTE_GTA_V_LINK_HERE"
+               target="_blank">
+                <button>Play GTA V</button>
+            </a>
+
+        </div>
+
+
+        <!-- Roblox -->
+        <div class="game-card">
+
+            <h3>Roblox</h3>
+
+            <img src="roblox.jpg"
+                 alt="Roblox">
+            <p>Play, create, explore, and connect with players around the world </p>
+
+            <p>⭐ Rating: 4.5/5</p>
+
+            <button class="favorite-btn"
+                    onclick="toggleFavorite(this, 'Roblox')">
+                🤍 Favorite
+            </button>
+
+            <a href="PASTE_ROBLOX_LINK_HERE"
+               target="_blank">
+                <button>Play Roblox</button>
+            </a>
+
+        </div>
+
+
+        <!-- EA Sports FC -->
+        <div class="game-card">
+
+            <h3>EA Sports FC</h3>
+
+            <img src="ea sports fc.jpg"
+                 alt="EA Sports FC">
+
+            <p>Build your team, compete against opponents, and become a football champion </p>
+
+            <p>⭐ Rating: 4/5</p>
+
+            <button class="favorite-btn"
+                    onclick="toggleFavorite(this, 'EA Sports FC')">
+                🤍 Favorite
+            </button>
+
+            <a href="PASTE_EA_SPORTS_FC_LINK_HERE"
+               target="_blank">
+                <button>Play EA Sports FC</button>
+            </a>
+
+        </div>
+
+
+        <!-- Asphalt 9 -->
+        <div class="game-card">
+
+            <h3>Asphalt 9</h3>
+
+            <img src="asphalt 9.jpg"
+                 alt="Asphalt 9">
+
+           
+
+            <p>Drive incredible cars and race across spectacular locations </p>
+
+            <p>⭐ Rating: 4/5</p>
+
+            <button class="favorite-btn"
+                    onclick="toggleFavorite(this, 'Asphalt 9')">
+                🤍 Favorite
+            </button>
+
+            <a href="PASTE_ASPHALT_9_LINK_HERE"
+               target="_blank">
+                <button>Play Asphalt 9</button>
+            </a>
+
+        </div>
+
+
+        <!-- Among Us -->
+        <div class="game-card">
+
+            <h3>Among Us</h3>
+
+            <img src="among us.jpg"
+                 alt="Among Us">
+
+            <p>Complete tasks, find the impostor, and try to survive </p>
+
+            <p>⭐ Rating: 4/5</p>
+
+            <button class="favorite-btn"
+                    onclick="toggleFavorite(this, 'Among Us')">
+                🤍 Favorite
+            </button>
+
+            <a href="PASTE_AMONG_US_LINK_HERE"
+               target="_blank">
+                <button>Play Among Us</button>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- My Favorites -->
+    <div class="favorites-section">
+
+        <h3>❤️ My Favorites</h3>
+
+        <p id="favoriteMessage">
+            You haven't added any games to your favorites yet
+        </p>
+
+        <ul id="favoritesList"></ul>
+
+    </div>
+
+</section>
+
+<hr>
+    <!-- About Section -->
+    
+<section id="about">
+
+    <h2>👤 About Kiki Gaming</h2>
+
+    <br>
+
+    <p>  
+        Welcome to Kiki Gaming! This website is all about my favorite games
+        and everything I enjoy about gaming
+    </p>
+
+    <p>
+        Here you can discover games like Mobile legend, Call of Duty,
+        and Need for Speed
+    </p>
+</section>
+
+<section id="contact">
+
+    <h2> Contact Kiki Gaming</h2>
+
+    <p>Want to talk about games? Send me a message!</p>
+
+    <form onsubmit="sendMessage(event)"> 
+ 
+    <label for="name">Your Name:</label> 
+    <br> 
+    <input type="text" id="name" placeholder="Enter your name" required> 
+ 
+    <br><br> 
+ 
+    <label for="email">Your Email:</label> 
+    <br> 
+    <input type="email" id="email" placeholder="Enter your email" required> 
+ 
+    <br><br> 
+ 
+    <label for="message">Your Message:</label> 
+    <br> 
+    <textarea id="message" rows="5" placeholder="Write your message..." required></textarea> 
+ 
+    <br><br> 
+ 
+    <button type="submit">Send Message 📩</button> 
+</form>
+
+</section>
+
+<button id="topButton" onclick="goToTop()">⬆️ Back to Top</button>
+
+<footer>
+
+    <hr>
+
+    <h3> Kiki Gaming</h3>
+
+    <p>Thanks for visiting Kiki Gaming!</p>
+
+   <div class="social-links">
+
+    <a href="https://www.youtube.com/" target="_blank">
+        <i class="fa-brands fa-youtube"></i>
+    </a>
+
+    <a href="https://www.instagram.com/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="https://www.tiktok.com/" target="_blank">
+        <i class="fa-brands fa-tiktok"></i>
+    </a>
+
+</div>
+
+    <p>© 2026 Kiki Gaming. All rights reserved.</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
